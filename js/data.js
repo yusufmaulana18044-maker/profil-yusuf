@@ -84,10 +84,14 @@ const PORTFOLIO_DATA = {
       title: 'Batik Sekar Reyog — Website Usaha Batik Ponorogo',
       shortDesc: 'Website e-katalog dinamis untuk mempromosikan kain batik khas Reyog Ponorogo, dilengkapi koneksi database MySQL dan pemesanan WhatsApp otomatis.',
       featured: true,
+      image: 'images/proyek-batik.png',
       year: '2026',
       tech: ['PHP Native', 'MySQL (phpMyAdmin)', 'HTML5', 'CSS3', 'XAMPP'],
       demoUrl: 'katalog-batik.html',
       body: `
+        <div class="modal-featured-img-box">
+          <img src="images/proyek-batik.png" alt="Website Usaha Batik Sekar Reyog" class="modal-featured-img">
+        </div>
         <div class="modal-preview-box">
           <p><strong>Latar Belakang Proyek:</strong> Proyek tugas kejuruan sekaligus aksi nyata membantu digitalisasi usaha batik lokal di Kauman, Ponorogo. Membantu pemilik usaha memajang koleksi motif batik khas Ponorogo secara online agar mudah diakses pembeli.</p>
         </div>
@@ -114,10 +118,14 @@ const PORTFOLIO_DATA = {
       title: 'Website Profil & Portofolio Personal Interaktif',
       shortDesc: 'Portofolio digital pribadi untuk merangkum hasil belajar kejuruan, proyek web, dan dokumentasi sertifikat kompetensi.',
       featured: true,
+      image: 'images/proyek-portofolio.png',
       year: '2026',
       tech: ['HTML5 Semantic', 'Vanilla CSS3', 'JavaScript ES6', 'LocalStorage API'],
       demoUrl: 'index.html',
       body: `
+        <div class="modal-featured-img-box">
+          <img src="images/proyek-portofolio.png" alt="Website Portofolio Yusuf Maulana" class="modal-featured-img">
+        </div>
         <div class="modal-preview-box">
           <p><strong>Tentang Website:</strong> Website ini saya bangun sendiri menggunakan HTML, CSS, dan JavaScript murni tanpa ketergantungan framework berat. Dibuat agar ringan, cepat dibuka, dan mudah dipahami oleh guru maupun calon rekan kerja.</p>
         </div>
