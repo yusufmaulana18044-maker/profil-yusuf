@@ -12,14 +12,42 @@ const PORTFOLIO_DATA = {
     email: "yusufmwakhidul@gmail.com",
     phone: "+62 852-3118-0206",
     waUrl: "https://wa.me/6285231180206",
-    github: "https://github.com",
-    linkedin: "https://linkedin.com",
+    github: "https://github.com/yusufmaulana18044-maker",
     instagram: "https://www.instagram.com/ysfmaulnawakhidqhar_?stkn=bjN3emljOXRxNHB4&utm_source=qr",
-    status: "Siswa SMK Jurusan TI • Terbuka untuk PKL / Magang & Proyek Web",
-    tagline: "Fokus belajar pemrograman web (HTML, CSS, PHP & MySQL), senang membuat proyek aplikasi bermanfaat dan mengelola basis data."
+    status: "Siswa SMK Jurusan TI • Alumni PKL RSUD Dr. Harjono Ponorogo",
+    tagline: "Siswa SMK yang fokus pada pemrograman web (PHP & MySQL), berpengalaman PKL membangun sistem informasi kepegawaian (SICAKEP) di RSUD Dr. Harjono Ponorogo."
   },
 
   projects: {
+    'sicakep': {
+      id: 'sicakep',
+      category: 'aplikasi',
+      tag: 'Proyek PKL RSUD Dr. Harjono Ponorogo',
+      title: 'SICAKEP — Sistem Informasi Catat Kepegawaian (RSUD Dr. Harjono Ponorogo)',
+      shortDesc: 'Aplikasi berbasis web untuk pencatatan, pemantauan, dan administrasi data staf & pegawai rumah sakit di RSUD Dr. Harjono S. Ponorogo saat masa Praktik Kerja Lapangan (PKL).',
+      featured: true,
+      image: 'images/proyek-sicakep.png',
+      year: '2025 - 2026',
+      tech: ['PHP', 'MySQL', 'HTML5', 'CSS3', 'Responsive Web', 'Sistem Kepegawaian'],
+      body: `
+        <div class="modal-featured-img-box">
+          <img src="images/proyek-sicakep.png" alt="Sistem Informasi Catat Kepegawaian SICAKEP RSUD Dr Harjono Ponorogo" class="modal-featured-img">
+        </div>
+        <div class="modal-preview-box">
+          <p><strong>Latar Belakang Proyek:</strong> Aplikasi nyata yang saya bangun dan kembangkan selama menjalani Praktik Kerja Lapangan (PKL) di <strong>RSUD Dr. Harjono S. Kabupaten Ponorogo</strong>. Sistem ini dirancang untuk mempermudah proses pencatatan, verifikasi data pegawai, dan pengelolaan administrasi kepegawaian rumah sakit secara terpusat.</p>
+        </div>
+        <h4>Fitur Utama Sistem:</h4>
+        <ul class="modal-feature-list">
+          <li><strong>Autentikasi & Portal Masuk Akun:</strong> Form login aman bagi staf dan admin rumah sakit untuk mengakses data pegawai sesuai hak akses.</li>
+          <li><strong>Pencatatan Kepegawaian:</strong> Fasilitas pencatatan berkas, absensi/aktivitas kerja, serta data profil pegawai RSUD Dr. Harjono.</li>
+          <li><strong>Antarmuka Responsif & Rapi:</strong> Tampilan visual yang bersih dengan latar instansi RSUD Dr. Harjono Ponorogo yang nyaman digunakan staf di PC kerja maupun tablet.</li>
+          <li><strong>Manajemen Basis Data:</strong> Integrasi database terstruktur untuk menjamin keakuratan dan keteraturan data pegawai rumah sakit.</li>
+        </ul>
+        <h4>Instansi & Lingkup Kerja:</h4>
+        <p><strong>Tempat PKL:</strong> RSUD Dr. Harjono S. Ponorogo, Jawa Timur<br>
+        <strong>Peran:</strong> Junior Web Developer / Pengembang Aplikasi Kepegawaian</p>
+      `
+    },
     'batik': {
       id: 'batik',
       category: 'web-dinamis',

@@ -90,8 +90,8 @@ Proyek ini menggunakan teknologi standar web murni (*HTML5, Vanilla CSS3, JavaSc
 - **Domisili:** Ponorogo, Jawa Timur, Indonesia
 - **Email:** [yusufmwakhidul@gmail.com](mailto:yusufmwakhidul@gmail.com)
 - **WhatsApp:** [+62 852-3118-0206](https://wa.me/6285231180206)
-- **LinkedIn:** [Profil LinkedIn](https://linkedin.com)
-- **GitHub:** [Profil GitHub](https://github.com)
+- **GitHub:** [yusufmaulana18044-maker](https://github.com/yusufmaulana18044-maker)
+- **Instagram:** [@ysfmaulnawakhidqhar_](https://www.instagram.com/ysfmaulnawakhidqhar_?stkn=bjN3emljOXRxNHB4&utm_source=qr)
 
 ---
 *© 2026 Yusuf Maulana Wakhidul Qohar. Didesain dengan Standar Kompetensi Kerja Nasional Indonesia (SKKNI) — Skema Junior Web Developer.*

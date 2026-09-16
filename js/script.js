@@ -48,11 +48,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   const typingTextEl = document.getElementById('typingText');
   const roles = [
-    "Junior Web Developer",
-    "PHP & MySQL Specialist",
-    "AI Prompt Engineering",
-    "KKA & Data Analytics",
-    "Clean Code Practitioner"
+    "Siswa SMK & Junior Web Developer",
+    "Pengembang Aplikasi SICAKEP (RSUD)",
+    "Pemrograman Web (PHP & MySQL)",
+    "Fokus Pengelolaan Basis Data"
   ];
   let roleIndex = 0;
   let charIndex = 0;
@@ -367,6 +366,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // A. PORTFOLIO PROJECT MODALS
   const projectData = {
+    'sicakep': {
+      tag: 'Proyek PKL RSUD Dr. Harjono Ponorogo',
+      title: 'SICAKEP — Sistem Informasi Catat Kepegawaian (RSUD Dr. Harjono Ponorogo)',
+      body: `
+        <div class="modal-featured-img-box">
+          <img src="images/proyek-sicakep.png" alt="Sistem Informasi Catat Kepegawaian SICAKEP RSUD Dr Harjono Ponorogo" class="modal-featured-img">
+        </div>
+        <div class="modal-preview-box">
+          <p><strong>Latar Belakang Proyek:</strong> Aplikasi nyata yang saya bangun dan kembangkan selama menjalani masa Praktik Kerja Lapangan (PKL) di <strong>RSUD Dr. Harjono S. Kabupaten Ponorogo</strong>. Sistem ini dirancang untuk mempermudah proses pencatatan, verifikasi data pegawai, dan pengelolaan administrasi kepegawaian rumah sakit secara terpusat.</p>
+        </div>
+        <h4>Fitur Utama Sistem:</h4>
+        <ul class="modal-feature-list">
+          <li><strong>Autentikasi & Portal Masuk Akun:</strong> Form login terintegrasi untuk verifikasi akun staf dan admin RSUD Dr. Harjono Ponorogo.</li>
+          <li><strong>Pencatatan Kepegawaian:</strong> Fasilitas pencatatan berkas, absensi/aktivitas kerja, serta data profil pegawai rumah sakit.</li>
+          <li><strong>Antarmuka Responsif & Rapi:</strong> Desain kartu modern dengan background instansi RSUD Dr. Harjono Ponorogo yang nyaman digunakan di PC maupun perangkat tablet.</li>
+          <li><strong>Manajemen Basis Data:</strong> Integrasi database terstruktur untuk menjamin keakuratan dan keteraturan data pegawai rumah sakit.</li>
+        </ul>
+        <h4>Instansi & Lingkup Kerja:</h4>
+        <p><strong>Tempat PKL:</strong> RSUD Dr. Harjono S. Ponorogo, Jawa Timur<br>
+        <strong>Peran:</strong> Junior Web Developer / Pengembang Aplikasi Kepegawaian</p>
+      `
+    },
     'batik': {
       tag: 'Web Dinamis (PHP & MySQL)',
       title: 'Batik Sekar Reyog — Website Usaha Batik Ponorogo',
