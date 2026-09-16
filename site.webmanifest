@@ -1,0 +1,21 @@
+{
+  "name": "Yusuf Maulana Wakhidul Qohar — Portofolio",
+  "short_name": "Yusuf Maulana",
+  "description": "Portofolio Resmi Yusuf Maulana Wakhidul Qohar, Junior Web Developer bersertifikat SKKNI.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#070913",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "images/profile-square.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "images/profile-square.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
