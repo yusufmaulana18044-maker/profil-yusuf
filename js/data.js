@@ -14,7 +14,7 @@ const PORTFOLIO_DATA = {
     waUrl: "https://wa.me/6285231180206",
     github: "https://github.com/yusufmaulana18044-maker",
     instagram: "https://www.instagram.com/ysfmaulnawakhidqhar_?stkn=bjN3emljOXRxNHB4&utm_source=qr",
-    status: "Siswa SMK Jurusan TI • Alumni PKL RSUD Dr. Harjono Ponorogo",
+    status: "Siswa SMK Jurusan TI • PKL di RSUD Dr. Harjono Ponorogo",
     tagline: "Siswa SMK yang fokus pada pemrograman web (PHP & MySQL), berpengalaman PKL membangun sistem informasi kepegawaian (SICAKEP) di RSUD Dr. Harjono Ponorogo."
   },
 
@@ -46,6 +46,35 @@ const PORTFOLIO_DATA = {
         <h4>Instansi & Lingkup Kerja:</h4>
         <p><strong>Tempat PKL:</strong> RSUD Dr. Harjono S. Ponorogo, Jawa Timur<br>
         <strong>Peran:</strong> Junior Web Developer / Pengembang Aplikasi Kepegawaian</p>
+      `
+    },
+    'tokobuku': {
+      id: 'tokobuku',
+      category: 'aplikasi',
+      tag: 'Aplikasi Web (PHP & MySQL)',
+      title: 'Toko Buku Digital — Sistem Informasi & Katalog Buku',
+      shortDesc: 'Aplikasi sistem pencatatan inventaris buku dan katalog digital dengan operasi CRUD lengkap, portal masuk akun, dan integrasi database MySQL phpMyAdmin.',
+      featured: true,
+      image: 'images/proyek-tokobuku.png',
+      year: '2025',
+      tech: ['PHP Native', 'MySQL (phpMyAdmin)', 'HTML5 & CSS3', 'CRUD Engine', 'XAMPP'],
+      body: `
+        <div class="modal-featured-img-box">
+          <img src="images/proyek-tokobuku.png" alt="Aplikasi Toko Buku Digital" class="modal-featured-img">
+        </div>
+        <div class="modal-preview-box">
+          <p><strong>Tujuan Pembuatan:</strong> Aplikasi web dinamis yang saya kembangkan untuk mempraktikkan pengelolaan data digital, portal autentikasi akun, dan operasi CRUD (Create, Read, Update, Delete) pada tabel database MySQL di lingkungan server XAMPP.</p>
+        </div>
+        <h4>Kemampuan & Fitur Aplikasi:</h4>
+        <ul class="modal-feature-list">
+          <li><strong>Portal Masuk Akun:</strong> Formulir login yang elegan dan responsif dengan opsi simpan sesi serta penanganan validasi password.</li>
+          <li><strong>Katalog Buku Digital:</strong> Menampilkan ribuan koleksi buku berdasarkan kategori, pengarang, dan penerbit secara dinamis.</li>
+          <li><strong>Manajemen Data (CRUD):</strong> Kemudahan menambah judul buku baru, memperbarui stok dan harga, serta menghapus data dengan konfirmasi aman.</li>
+          <li><strong>File Skema MySQL Asli:</strong> Dilengkapi file <code>tokobuku.sql</code> yang siap di-import langsung di phpMyAdmin.</li>
+        </ul>
+        <div class="modal-actions" style="gap: 10px; flex-wrap: wrap;">
+          <a href="database/tokobuku.sql" download class="btn btn-primary">📥 Unduh File SQL (tokobuku.sql)</a>
+        </div>
       `
     },
     'batik': {

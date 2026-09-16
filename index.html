@@ -105,7 +105,7 @@
       <div class="wrap hero-inner">
         <div class="hero-text">
           <div class="status-badge">
-            <span class="status-dot"></span> Siswa SMK • Alumni PKL RSUD Dr. Harjono Ponorogo
+            <span class="status-dot"></span> Siswa SMK • PKL di RSUD Dr. Harjono Ponorogo
           </div>
 
           <div class="hero-dynamic-role">
@@ -168,12 +168,12 @@
       <div class="wrap hero-stats-wrap">
         <div class="hero-stats-grid">
           <div class="stat-box">
-            <span class="stat-number" data-target="5">5</span><span class="stat-plus">+</span>
-            <span class="stat-title">Proyek Portofolio &amp; Praktik</span>
+            <span class="stat-number" data-target="4">4</span>
+            <span class="stat-title">Karya Portofolio Utama</span>
           </div>
           <div class="stat-box">
             <span class="stat-number">RSUD</span>
-            <span class="stat-title">Alumni PKL Dr. Harjono Ponorogo</span>
+            <span class="stat-title">PKL di Dr. Harjono Ponorogo</span>
           </div>
           <div class="stat-box">
             <span class="stat-number">PHP &amp; SQL</span>
@@ -695,23 +695,22 @@
           </div>
         </div>
 
-        <!-- Filter Buttons -->
+        <!-- Filter Buttons (Tepat 4 Karya Unggulan) -->
         <div class="portfolio-filter" id="portfolioFilter">
-          <button class="filter-btn active" data-filter="all">Semua Karya (7)</button>
-          <button class="filter-btn" data-filter="web-dinamis">Web Dinamis (PHP)</button>
-          <button class="filter-btn" data-filter="web-statis">Web Statis</button>
-          <button class="filter-btn" data-filter="aplikasi">Aplikasi Sistem</button>
-          <button class="filter-btn" data-filter="modul">Modul &amp; Edukasi</button>
+          <button class="filter-btn active" data-filter="all">Semua Karya (4)</button>
+          <button class="filter-btn" data-filter="aplikasi">Aplikasi Sistem (PHP &amp; MySQL)</button>
+          <button class="filter-btn" data-filter="web-dinamis">Web Dinamis (UMKM)</button>
+          <button class="filter-btn" data-filter="web-statis">Web Statis &amp; Portofolio</button>
         </div>
 
         <div class="portfolio-grid" id="portfolioGrid">
 
-          <!-- Project Utama (PKL): SICAKEP RSUD Dr. Harjono Ponorogo -->
+          <!-- Project 1 (PKL): SICAKEP RSUD Dr. Harjono Ponorogo -->
           <article class="project-card-item" data-category="aplikasi" data-project-id="sicakep">
             <div class="project-thumb project-media--sicakep">
               <img src="images/proyek-sicakep.png" alt="Aplikasi SICAKEP RSUD Dr. Harjono Ponorogo" class="project-thumb-img">
               <div class="project-overlay">
-                <span class="project-badge" style="background: rgba(13, 40, 71, 0.85); border-color: rgba(56, 189, 248, 0.3);">🏥 Proyek PKL RSUD Ponorogo</span>
+                <span class="project-badge" style="background: rgba(13, 40, 71, 0.88); border-color: rgba(56, 189, 248, 0.35);">🏥 Proyek PKL RSUD Ponorogo</span>
               </div>
             </div>
             <div class="project-content">
@@ -722,7 +721,7 @@
               </div>
               <h3 class="project-title">SICAKEP — Sistem Informasi Catat Kepegawaian</h3>
               <p class="project-desc">
-                Aplikasi sistem pencatatan kepegawaian RSUD Dr. Harjono S. Ponorogo yang dibangun saat Praktik Kerja Lapangan (PKL) untuk memudahkan verifikasi dan pengelolaan data pegawai rumah sakit.
+                Aplikasi sistem pencatatan kepegawaian RSUD Dr. Harjono S. Ponorogo yang dibangun saat Praktik Kerja Lapangan (PKL) untuk memudahkan verifikasi dan monitoring data pegawai rumah sakit.
               </p>
               <div class="project-actions" style="gap: 8px; flex-wrap: wrap;">
                 <button class="btn btn-sm btn-primary open-proj-modal" data-proj="sicakep">
@@ -735,7 +734,39 @@
             </div>
           </article>
 
-          <!-- Project 2: Website Usaha Batik (Web Dinamis) -->
+          <!-- Project 2: Toko Buku Digital (PHP & MySQL CRUD) -->
+          <article class="project-card-item" data-category="aplikasi" data-project-id="tokobuku">
+            <div class="project-thumb project-media--crud">
+              <img src="images/proyek-tokobuku.png" alt="Aplikasi Toko Buku Digital" class="project-thumb-img">
+              <div class="project-overlay">
+                <span class="project-badge" style="background: rgba(15, 30, 60, 0.88); border-color: rgba(59, 130, 246, 0.35);">📚 Aplikasi Toko Buku Digital</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tag-row">
+                <span class="ptag">PHP &amp; MySQL</span>
+                <span class="ptag">CRUD System</span>
+                <span class="ptag">Katalog Digital</span>
+              </div>
+              <h3 class="project-title">Toko Buku Digital — Sistem Informasi &amp; Katalog Buku</h3>
+              <p class="project-desc">
+                Aplikasi sistem pencatatan buku dan inventaris katalog digital dengan portal masuk akun, operasi CRUD lengkap di MySQL phpMyAdmin, dan tampilan responsif.
+              </p>
+              <div class="project-actions" style="gap: 8px; flex-wrap: wrap;">
+                <button class="btn btn-sm btn-primary open-proj-modal" data-proj="tokobuku">
+                  Detail Proyek →
+                </button>
+                <button class="btn btn-sm btn-outline open-proj-modal" data-proj="tokobuku">
+                  🖼️ Lihat Foto Sistem
+                </button>
+                <a href="database/tokobuku.sql" download="tokobuku.sql" class="btn btn-sm btn-ghost" title="Unduh Skema MySQL">
+                  📥 File SQL
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Website Usaha Batik Sekar Reyog (Web Dinamis) -->
           <article class="project-card-item" data-category="web-dinamis" data-project-id="batik">
             <div class="project-thumb project-media--dynamic">
               <div class="project-overlay">
@@ -773,7 +804,7 @@
             </div>
           </article>
 
-          <!-- Project 2: Website Profil Personal (Web Statis) -->
+          <!-- Project 4: Website Profil Personal (Web Statis) -->
           <article class="project-card-item" data-category="web-statis" data-project-id="profil">
             <div class="project-thumb project-media--static">
               <div class="project-overlay">
@@ -797,144 +828,13 @@
               <p class="project-desc">
                 Website portofolio pribadi responsif untuk merangkum hasil karya belajar kejuruan, dokumentasi sertifikat kompetensi, dan halaman resume siap cetak.
               </p>
-              <div class="project-actions">
+              <div class="project-actions" style="gap: 8px; flex-wrap: wrap;">
                 <button class="btn btn-sm btn-primary open-proj-modal" data-proj="profil">
                   Detail Proyek →
                 </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 3: Aplikasi Manajemen Data Siswa & Toko Buku (Aplikasi) -->
-          <article class="project-card-item" data-category="aplikasi" data-project-id="crud">
-            <div class="project-thumb project-media--crud">
-              <div class="project-overlay">
-                <span class="project-badge">Aplikasi Basis Data</span>
-              </div>
-              <div class="project-thumb-preview">
-                <div class="mock-browser-bar"><span></span><span></span><span></span></div>
-                <div class="mock-browser-body">
-                  <span class="mock-title">Sistem CRUD Toko Buku</span>
-                  <span class="mock-sub">Create, Read, Update, Delete</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-tag-row">
-                <span class="ptag">PHP &amp; MySQL</span>
-                <span class="ptag">CRUD System</span>
-                <span class="ptag">XAMPP</span>
-              </div>
-              <h3 class="project-title">Sistem Informasi Toko Buku &amp; Data Siswa</h3>
-              <p class="project-desc">
-                Aplikasi sistem informasi pengelolaan data buku dan inventaris dengan operasi CRUD lengkap (Tambah, Tampil, Ubah, Hapus) menggunakan PHP dan database MySQL.
-              </p>
-              <div class="project-actions" style="gap: 8px; flex-wrap: wrap;">
-                <button class="btn btn-sm btn-primary open-proj-modal" data-proj="crud">
-                  Detail Proyek →
-                </button>
-                <a href="database/tokobuku.sql" download="tokobuku.sql" class="btn btn-sm btn-ghost" title="Unduh Skema MySQL">
-                  📥 File SQL
+                <a href="cv.html" class="btn btn-sm btn-outline">
+                  📄 Buka Format CV
                 </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 4: Modul Pembelajaran KKA (Modul) -->
-          <article class="project-card-item" data-category="modul" data-project-id="modul-kka">
-            <div class="project-thumb project-media--modul">
-              <div class="project-overlay">
-                <span class="project-badge">Modul Edukasi</span>
-              </div>
-              <div class="project-thumb-preview">
-                <div class="mock-browser-bar"><span></span><span></span><span></span></div>
-                <div class="mock-browser-body">
-                  <span class="mock-title">Modul Interaktif KKA</span>
-                  <span class="mock-sub">Panduan Algoritma &amp; Data</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-tag-row">
-                <span class="ptag">Edukasi</span>
-                <span class="ptag">Algoritma</span>
-                <span class="ptag">KKA Digital</span>
-              </div>
-              <h3 class="project-title">Modul Interaktif KKA &amp; Dasar Pemrograman</h3>
-              <p class="project-desc">
-                Media bahan ajar digital berbentuk modul web untuk memandu rekan belajar memahami konsep percabangan logika, perulangan, dan formula spreadsheet.
-              </p>
-              <div class="project-actions">
-                <button class="btn btn-sm btn-primary open-proj-modal" data-proj="modul-kka">
-                  Detail Proyek →
-                </button>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 5: Media Pembelajaran Interaktif SQL (Media) -->
-          <article class="project-card-item" data-category="modul" data-project-id="sql-sim">
-            <div class="project-thumb project-media--sql">
-              <div class="project-overlay">
-                <span class="project-badge">Media Pembelajaran</span>
-              </div>
-              <div class="project-thumb-preview">
-                <div class="mock-browser-bar"><span></span><span></span><span></span></div>
-                <div class="mock-browser-body">
-                  <span class="mock-title">Simulasi Query SQL</span>
-                  <span class="mock-sub">Visualisasi Tabel Relasional</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-tag-row">
-                <span class="ptag">Media Visual</span>
-                <span class="ptag">SQL Explorer</span>
-                <span class="ptag">Interaktif</span>
-              </div>
-              <h3 class="project-title">Media Interaktif Visualisasi Query SQL &amp; Database</h3>
-              <p class="project-desc">
-                Simulator antarmuka visual untuk memahami bagaimana perintah SELECT, INSERT, UPDATE, dan DELETE beroperasi pada baris tabel secara real-time.
-              </p>
-              <div class="project-actions">
-                <button class="btn btn-sm btn-primary open-proj-modal" data-proj="sql-sim">
-                  Detail Media →
-                </button>
-                <a href="sql-playground.html" class="btn btn-sm btn-outline">
-                  Coba Simulator ⚡
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Project 6: AI Prompt Assistant Tool (Aplikasi / Tool) -->
-          <article class="project-card-item" data-category="aplikasi" data-project-id="ai-tool">
-            <div class="project-thumb project-media--aitool">
-              <div class="project-overlay">
-                <span class="project-badge">Tool AI Helper</span>
-              </div>
-              <div class="project-thumb-preview">
-                <div class="mock-browser-bar"><span></span><span></span><span></span></div>
-                <div class="mock-browser-body">
-                  <span class="mock-title">Prompt Generator Web</span>
-                  <span class="mock-sub">Template Coding &amp; Debugging</span>
-                </div>
-              </div>
-            </div>
-            <div class="project-content">
-              <div class="project-tag-row">
-                <span class="ptag">AI Prompting</span>
-                <span class="ptag">Tool Pemrograman</span>
-                <span class="ptag">JS Vanilla</span>
-              </div>
-              <h3 class="project-title">Developer AI Prompt Assistant &amp; Code Formatter</h3>
-              <p class="project-desc">
-                Aplikasi mini web generator prompt terstruktur untuk membantu programmer pemula mengajukan pertanyaan bug dan optimasi kode ke model AI secara efektif.
-              </p>
-              <div class="project-actions">
-                <button class="btn btn-sm btn-primary open-proj-modal" data-proj="ai-tool">
-                  Detail Proyek →
-                </button>
               </div>
             </div>
           </article>

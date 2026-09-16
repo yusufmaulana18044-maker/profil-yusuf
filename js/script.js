@@ -429,20 +429,47 @@ document.addEventListener('DOMContentLoaded', () => {
       `
     },
     'crud': {
-      tag: 'Aplikasi Web Basis Data',
-      title: 'Aplikasi Web Manajemen Data Siswa & Inventaris Komputer',
+      tag: 'Aplikasi Web (PHP & MySQL)',
+      title: 'Toko Buku Digital — Sistem Informasi & Katalog Buku',
       body: `
-        <div class="modal-preview-box">
-          <p><strong>Ringkasan Proyek:</strong> Aplikasi backend latihan untuk mendalami arsitektur Create, Read, Update, Delete (CRUD) menggunakan koneksi MySQLi dan PHP.</p>
+        <div class="modal-featured-img-box">
+          <img src="images/proyek-tokobuku.png" alt="Aplikasi Toko Buku Digital" class="modal-featured-img">
         </div>
-        <h4>Fitur Sistem:</h4>
+        <div class="modal-preview-box">
+          <p><strong>Tujuan Pembuatan:</strong> Aplikasi web dinamis yang saya kembangkan untuk mempraktikkan pengelolaan data katalog digital, portal autentikasi akun, dan operasi CRUD (Create, Read, Update, Delete) pada tabel database MySQL di server lokal XAMPP.</p>
+        </div>
+        <h4>Fitur Utama Sistem:</h4>
         <ul class="modal-feature-list">
-          <li><strong>Penginputan Data Form:</strong> Form validasi input data siswa dan perangkat inventaris lab sekolah.</li>
-          <li><strong>Pencarian Real-Time:</strong> Filter pencarian instan berdasarkan nama atau nomor induk siswa.</li>
-          <li><strong>Update & Hapus Aman:</strong> Konfirmasi peringatan sebelum penghapusan baris data dari tabel basis data.</li>
+          <li><strong>Portal Masuk Akun:</strong> Formulir login yang elegan dan responsif dengan opsi simpan sesi serta validasi keamanan.</li>
+          <li><strong>Katalog Buku Digital:</strong> Menampilkan koleksi buku berdasarkan kategori, pengarang, dan penerbit secara dinamis.</li>
+          <li><strong>Manajemen Data (CRUD):</strong> Kemudahan menambah judul buku baru, memperbarui stok/harga, serta menghapus data dengan konfirmasi aman.</li>
+          <li><strong>File Basis Data MySQL:</strong> Tabel database <code>tokobuku.sql</code> yang terstruktur dan siap digunakan.</li>
         </ul>
-        <h4>Teknologi:</h4>
-        <p><code>PHP Native</code>, <code>MySQL Server (phpMyAdmin)</code>, <code>XAMPP Environment</code>.</p>
+        <div class="modal-actions" style="gap: 10px; flex-wrap: wrap;">
+          <a href="database/tokobuku.sql" download class="btn btn-primary">📥 Unduh File SQL (tokobuku.sql)</a>
+        </div>
+      `
+    },
+    'tokobuku': {
+      tag: 'Aplikasi Web (PHP & MySQL)',
+      title: 'Toko Buku Digital — Sistem Informasi & Katalog Buku',
+      body: `
+        <div class="modal-featured-img-box">
+          <img src="images/proyek-tokobuku.png" alt="Aplikasi Toko Buku Digital" class="modal-featured-img">
+        </div>
+        <div class="modal-preview-box">
+          <p><strong>Tujuan Pembuatan:</strong> Aplikasi web dinamis yang saya kembangkan untuk mempraktikkan pengelolaan data katalog digital, portal autentikasi akun, dan operasi CRUD (Create, Read, Update, Delete) pada tabel database MySQL di server lokal XAMPP.</p>
+        </div>
+        <h4>Fitur Utama Sistem:</h4>
+        <ul class="modal-feature-list">
+          <li><strong>Portal Masuk Akun:</strong> Formulir login yang elegan dan responsif dengan opsi simpan sesi serta validasi keamanan.</li>
+          <li><strong>Katalog Buku Digital:</strong> Menampilkan koleksi buku berdasarkan kategori, pengarang, dan penerbit secara dinamis.</li>
+          <li><strong>Manajemen Data (CRUD):</strong> Kemudahan menambah judul buku baru, memperbarui stok/harga, serta menghapus data dengan konfirmasi aman.</li>
+          <li><strong>File Basis Data MySQL:</strong> Tabel database <code>tokobuku.sql</code> yang terstruktur dan siap digunakan.</li>
+        </ul>
+        <div class="modal-actions" style="gap: 10px; flex-wrap: wrap;">
+          <a href="database/tokobuku.sql" download class="btn btn-primary">📥 Unduh File SQL (tokobuku.sql)</a>
+        </div>
       `
     },
     'modul-kka': {
