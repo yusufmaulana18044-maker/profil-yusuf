@@ -15,9 +15,8 @@ const PORTFOLIO_DATA = {
     github: "https://github.com/yusufmaulana18044-maker",
     instagram: "https://www.instagram.com/ysfmaulnawakhidqhar_?stkn=bjN3emljOXRxNHB4&utm_source=qr",
     school: "SMKN 1 Jenangan (Ponorogo)",
-    organization: "Anggota OSIS SMKN 1 Jenangan (Periode 2024 - 2025)",
-    status: "Siswa SMKN 1 Jenangan • Anggota OSIS 2024-2025 • PKL di RSUD Dr. Harjono Ponorogo",
-    tagline: "Siswa SMKN 1 Jenangan dan Anggota OSIS 2024-2025 yang fokus pada pemrograman web (PHP & MySQL), berpengalaman PKL membangun sistem informasi kepegawaian (SICAKEP) di RSUD Dr. Harjono Ponorogo."
+    status: "Siswa SMKN 1 Jenangan • PKL di RSUD Dr. Harjono Ponorogo",
+    tagline: "Siswa SMKN 1 Jenangan yang fokus pada pemrograman web (PHP & MySQL), berpengalaman PKL membangun sistem informasi kepegawaian (SICAKEP) di RSUD Dr. Harjono Ponorogo."
   },
 
   projects: {
