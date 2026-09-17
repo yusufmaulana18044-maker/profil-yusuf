@@ -732,85 +732,81 @@ document.addEventListener('DOMContentLoaded', () => {
   // D. ARTICLE READER MODALS
   const articleData = {
     'php-tutorial': {
-      title: 'Panduan Dasar Membangun Website Dinamis dengan PHP dan MySQL',
-      tag: 'Tutorial Web Development',
-      meta: '<span>✍️ Oleh Yusuf Maulana</span> • <span>📅 10 Feb 2026</span> • <span>⏱️ 5 menit baca</span>',
+      title: 'Cara Sederhana Menghubungkan PHP ke Database MySQL (koneksi.php)',
+      tag: 'Catatan Belajar Web',
+      meta: '<span>✍️ Oleh Yusuf Maulana</span> • <span>📅 10 Feb 2026</span> • <span>⏱️ 4 menit baca</span>',
       body: `
-        <h4>1. Mengapa Memilih PHP & MySQL untuk Pemula?</h4>
-        <p>PHP dan MySQL merupakan fondasi teknologi web yang sangat matang, mudah dipelajari, dan memiliki dokumentasi komunitas yang luas. Sangat cocok bagi siswa kejuruan yang ingin memahami alur kerja backend dari dasarnya.</p>
+        <h4>1. Menyiapkan Database di phpMyAdmin</h4>
+        <p>Sebelum menghubungkan kode PHP, pastikan service <strong>Apache</strong> dan <strong>MySQL</strong> di aplikasi XAMPP sudah berwarna hijau (Start). Buat database baru di <code>localhost/phpmyadmin</code>, misalnya dengan nama <code>db_batik_sekar</code>.</p>
 
-        <h4>2. Langkah Membuat Koneksi Database</h4>
-        <p>Untuk menghubungkan script PHP ke server MySQL, kita dapat memanfaatkan ekstensi <code>mysqli</code> seperti contoh berikut:</p>
-        <pre><code>&lt;?php
+        <h4>2. Menulis File koneksi.php</h4>
+        <p>Berikut potongan script sederhana yang biasa saya gunakan pada tugas sekolah:</p>
+        <pre><code class="language-php">&lt;?php
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "db_portofolio";
+$db   = "db_batik_sekar";
 
-$conn = mysqli_connect($host, $user, $pass, $db);
+$koneksi = mysqli_connect($host, $user, $pass, $db);
 
-if (!$conn) {
-    die("Koneksi gagal: " . mysqli_connect_error());
+if (!$koneksi) {
+    die("Gagal terhubung ke database: " . mysqli_connect_error());
 }
+// echo "Koneksi database berhasil!";
 ?&gt;</code></pre>
 
-        <h4>3. Menampilkan Data ke Tabel HTML</h4>
-        <p>Setelah terkoneksi, gunakan fungsi <code>mysqli_query()</code> dan perulangan <code>while($row = mysqli_fetch_assoc($query))</code> untuk merender data secara dinamis ke antarmuka halaman web Anda.</p>
-
-        <h4>Kesimpulan</h4>
-        <p>Dengan memahami prinsip dasar query SQL dan penanganan variabel di PHP, Anda sudah memiliki bekal kuat untuk membangun website dinamis yang siap digunakan di dunia industri.</p>
+        <h4>3. Menggunakan di File Lain</h4>
+        <p>Cukup tambahkan <code>include 'koneksi.php';</code> di baris paling atas file katalog atau form Anda. Sangat ringkas dan mudah dipahami untuk latihan pemula.</p>
       `
     },
-    'ai-developer': {
-      title: 'Mengapa Junior Developer Perlu Memahami Tools AI Sejak Dini?',
-      tag: 'Wawasan Artificial Intelligence',
-      meta: '<span>✍️ Oleh Yusuf Maulana</span> • <span>📅 28 Jan 2026</span> • <span>⏱️ 4 menit baca</span>',
+    'sql-tutorial': {
+      title: 'Memahami Kueri Dasar SQL (SELECT, WHERE, ORDER BY) untuk Latihan Tugas',
+      tag: 'Dasar Basis Data',
+      meta: '<span>✍️ Oleh Yusuf Maulana</span> • <span>📅 20 Jan 2026</span> • <span>⏱️ 3 menit baca</span>',
       body: `
-        <h4>Era Baru Pemrograman dengan Bantuan AI</h4>
-        <p>Kehadiran Large Language Model (LLM) seperti ChatGPT, Gemini, dan Cursor bukan ancaman bagi pemrogram pemula, melainkan kesempatan luar biasa untuk mempercepat kurva belajar kita.</p>
+        <h4>1. Menampilkan Semua Data (SELECT *)</h4>
+        <p>Perintah <code>SELECT * FROM produk_batik;</code> digunakan untuk mengambil seluruh kolom dan baris yang ada di dalam tabel data.</p>
 
-        <h4>Manfaat Utama untuk Junior Developer:</h4>
-        <ul class="modal-feature-list">
-          <li><strong>Penjelasan Error Instan:</strong> Saat menjumpai pesan error kompleks di console peramban atau terminal, AI mampu menguraikan arti error tersebut dalam bahasa yang mudah dipahami.</li>
-          <li><strong>Latihan Logika Algoritma:</strong> Kita dapat meminta model AI memberikan variasi alternatif pemecahan masalah (misalnya perbandingan efisiensi loop vs method bawaan).</li>
-          <li><strong>Membiasakan Clean Code:</strong> Menanyakan rekomendasi penamaan variabel dan struktur modular.</li>
-        </ul>
+        <h4>2. Menyaring Data Berdasarkan Syarat (WHERE)</h4>
+        <p>Jika hanya ingin menampilkan produk batik dengan harga di bawah 200 ribu, kita gunakan klausa <code>WHERE</code>:</p>
+        <pre><code class="language-sql">SELECT * FROM produk_batik WHERE harga &lt;= 200000;</code></pre>
 
-        <h4>Penting: Jangan Sekadar Copy-Paste!</h4>
-        <p>Kunci sukses memanfaatkan AI adalah memahami setiap baris kode yang dihasilkan. Selalu baca, pahami logika jalannya kode, dan uji secara manual di lingkungan lokal Anda.</p>
+        <h4>3. Mengurutkan Data (ORDER BY)</h4>
+        <p>Untuk mengurutkan produk dari harga termurah ke termahal atau sebaliknya, gunakan <code>ORDER BY harga ASC</code> atau <code>DESC</code>.</p>
       `
     },
-    'clean-code': {
-      title: 'Tips Menyusun Kode HTML5 & CSS3 yang Clean dan Responsif',
-      tag: 'Best Practices Frontend',
-      meta: '<span>✍️ Oleh Yusuf Maulana</span> • <span>📅 15 Des 2025</span> • <span>⏱️ 6 menit baca</span>',
+    'ai-tutorial': {
+      title: 'Tips Bijak Memanfaatkan AI (ChatGPT/Gemini) untuk Membantu Belajar Koding',
+      tag: 'Tips Belajar Koding',
+      meta: '<span>✍️ Oleh Yusuf Maulana</span> • <span>📅 15 Des 2025</span> • <span>⏱️ 3 menit baca</span>',
       body: `
-        <h4>1. Gunakan Tag HTML Semantik</h4>
-        <p>Hindari penggunaan tag <code>&lt;div&gt;</code> untuk semua elemen. Gunakan tag yang memiliki makna seperti <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, dan <code>&lt;footer&gt;</code>. Hal ini krusial untuk aksesibilitas dan SEO.</p>
+        <h4>1. Jadikan AI Sebagai Teman Diskusi, Bukan Sekadar Salin-Tempel</h4>
+        <p>Saat menemukan pesan error di PHP atau JavaScript, tanyakan ke AI: <em>"Kenapa error ini bisa muncul dan apa alur logika yang tepat?"</em> Dengan begitu, kita tetap memahami inti permasalahannya.</p>
 
-        <h4>2. Manfaatkan CSS Custom Properties (Variables)</h4>
-        <p>Mendefinisikan palet warna, spasi, dan font family di dalam selector <code>:root</code> membuat proses pemeliharaan tema dan styling jauh lebih efisien.</p>
+        <h4>2. Selalu Ketik Ulang dan Uji Sendiri</h4>
+        <p>Jangan langsung menempel kode mentah-mentah ke tugas sekolah. Ketik ulang baris per baris di VS Code agar tangan dan logika kita semakin terlatih.</p>
 
-        <h4>3. Mobile-First & Flexible Units</h4>
-        <p>Gunakan unit relatif seperti <code>rem</code>, <code>%</code>, serta tata letak <strong>CSS Grid</strong> dan <strong>Flexbox</strong> agar elemen halaman secara otomatis menyesuaikan ukuran layar perangkat pengguna.</p>
+        <h4>3. Minta Penjelasan Bagian yang Belum Dipahami</h4>
+        <p>Mintalah penjelasan alur kode baris demi baris dengan bahasa santai yang mudah dicerna siswa pemula.</p>
       `
     },
     'batik-case': {
-      title: 'Pengalaman Nyata Mendigitalisasi Usaha Batik Sekar Reyog Ponorogo',
-      tag: 'Studi Kasus Proyek Nyata',
-      meta: '<span>✍️ Oleh Yusuf Maulana</span> • <span>📅 02 Mar 2026</span> • <span>⏱️ 7 menit baca</span>',
+      title: 'Cerita Pengalaman Membuat Website Katalog Batik Sekar Reyog untuk Tugas Sekolah',
+      tag: 'Cerita Praktik Siswa',
+      meta: '<span>✍️ Oleh Yusuf Maulana</span> • <span>📅 02 Mar 2026</span> • <span>⏱️ 5 menit baca</span>',
       body: `
-        <h4>Latar Belakang Proyek</h4>
-        <p>Batik Sekar Reyog adalah usaha kerajinan batik khas Ponorogo yang memiliki ragam motif sarat nilai kearifan lokal. Sebelumnya, proses pemasaran hanya mengandalkan transaksi di gerai fisik.</p>
+        <h4>1. Berangkat dari Tugas Praktik Sekolah</h4>
+        <p>Sebagai siswa jurusan RPL di SMKN 1 Jenangan, kami diajak untuk mencoba membuat karya yang bermanfaat bagi lingkungan sekitar. Kami memilih UMKM Batik Sekar Reyog Ponorogo agar karya motif khas daerah bisa dilihat lebih luas melalui internet.</p>
 
-        <h4>Tantangan & Solusi Teknis:</h4>
+        <h4>2. Proses Belajar yang Dialami:</h4>
         <ul class="modal-feature-list">
-          <li><strong>Tantangan:</strong> Pengelola membutuhkan platform yang mudah diakses dan tidak memberatkan koneksi internet pengguna.</li>
-          <li><strong>Solusi:</strong> Website katalog dibangun dengan PHP Native ringan tanpa framework rumit, dilengkapi kompresi aset gambar dan integrasi langsung ke WhatsApp customer service.</li>
+          <li><strong>Wawancara &amp; Dokumentasi:</strong> Datang langsung ke rumah produksi pengrajin untuk mencatat nama motif, harga, dan memotret kain.</li>
+          <li><strong>Mengolah Data ke Database:</strong> Belajar merancang tabel di phpMyAdmin untuk menyimpan data produk dan foto.</li>
+          <li><strong>Menampilkan ke Website:</strong> Menampilkan katalog menggunakan PHP Native sederhana serta integrasi chat WhatsApp pemesanan.</li>
         </ul>
 
-        <h4>Pelajaran yang Dipetik:</h4>
-        <p>Membuat website bukan hanya soal teknis baris kode, melainkan tentang bagaimana empati kita dalam memahami kebutuhan nyata pengguna dan pelaku usaha.</p>
+        <h4>3. Pelajaran Berharga:</h4>
+        <p>Meskipun kodingnya masih terus disempurnakan, ada kepuasan tersendiri saat karya tugas sekolah yang kami kerjakan bisa membantu pemilik usaha lokal.</p>
       `
     }
   };

@@ -482,8 +482,8 @@ if (!$koneksi) {
     },
     'ai-tutorial': {
       id: 'ai-tutorial',
-      title: 'Tips Bijak Memanfaatkan AI untuk Membantu Belajar Coding',
-      tag: 'Tips Belajar',
+      title: 'Tips Bijak Memanfaatkan AI (ChatGPT/Gemini) untuk Membantu Belajar Koding',
+      tag: 'Tips Belajar Koding',
       readTime: '3 menit baca',
       date: 'Desember 2025',
       author: 'Yusuf Maulana Wakhidul Qohar',
@@ -493,7 +493,33 @@ if (!$koneksi) {
         <p>Saat menemukan error syntax di PHP, tanyakan ke AI: <em>"Kenapa error ini bisa terjadi dan bagaimana alur logika yang benarnya?"</em> Dengan begitu, kita tetap memahami inti masalahnya.</p>
 
         <h4>2. Selalu Ketik Ulang dan Uji Sendiri</h4>
-        <p>Jangan langsung menyalin kode mentah-mentah ke proyek tugas. Ketik ulang baris per baris di editor kode Anda agar tangan dan logika terbiasa dengan sintaks tersebut.</p>
+        <p>Jangan langsung menyalin kode mentah-mentah ke proyek tugas sekolah. Ketik ulang baris per baris di VS Code agar tangan dan logika kita terbiasa dengan sintaks tersebut.</p>
+
+        <h4>3. Minta Penjelasan Alur Kode</h4>
+        <p>Jika ada baris fungsi bawaan yang belum pernah dipelajari di kelas, mintalah AI menjelaskan fungsi setiap parameternya dengan bahasa sederhana yang mudah dimengerti siswa.</p>
+      `
+    },
+    'batik-case': {
+      id: 'batik-case',
+      title: 'Cerita Pengalaman Membuat Website Katalog Batik Sekar Reyog untuk Tugas Sekolah',
+      tag: 'Cerita Praktik Siswa',
+      readTime: '5 menit baca',
+      date: 'Maret 2026',
+      author: 'Yusuf Maulana Wakhidul Qohar',
+      excerpt: 'Catatan belajar seru saat mencoba mewawancarai pemilik usaha, memotret motif batik, dan menampilkan datanya ke halaman web sederhana.',
+      body: `
+        <h4>1. Berangkat dari Tugas Praktik Sekolah</h4>
+        <p>Sebagai siswa RPL di SMKN 1 Jenangan, kami diajak untuk mencoba membuat karya yang bisa bermanfaat bagi lingkungan sekitar. Kami memilih UMKM Batik Sekar Reyog Ponorogo agar motif khas daerah bisa dilihat lewat internet.</p>
+
+        <h4>2. Proses Belajar yang Dialami:</h4>
+        <ul class="modal-feature-list">
+          <li><strong>Wawancara & Dokumentasi:</strong> Datang langsung ke tempat pengrajin untuk bertanya nama motif batik, rentang harga, dan memotret kain menggunakan kamera handphone.</li>
+          <li><strong>Mengolah Data ke Database:</strong> Belajar membuat tabel di phpMyAdmin untuk menyimpan nama batik, harga, deskripsi, dan nama file gambar.</li>
+          <li><strong>Menghubungkan ke Halaman Web:</strong> Menampilkan katalog produk menggunakan PHP Native sederhana dan menambahkan tombol chat WhatsApp agar pembeli bisa langsung bertanya ke penjual.</li>
+        </ul>
+
+        <h4>3. Pelajaran Berharga:</h4>
+        <p>Meskipun kodingnya masih sederhana dan terus disempurnakan, ada rasa bangga tersendiri saat tugas sekolah yang kami kerjakan bisa bermanfaat bagi orang lain.</p>
       `
     }
   }
