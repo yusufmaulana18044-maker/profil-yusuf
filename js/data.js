@@ -88,7 +88,7 @@ const PORTFOLIO_DATA = {
       image: 'images/proyek-batik.png',
       year: '2026',
       tech: ['PHP Native', 'MySQL (phpMyAdmin)', 'HTML5', 'CSS3', 'XAMPP'],
-      demoUrl: 'katalog-batik.html',
+      demoUrl: 'https://tokobatiksekarreyog.freepage.cc/index.php',
       body: `
         <div class="modal-featured-img-box">
           <img src="images/proyek-batik.png" alt="Website Usaha Batik Sekar Reyog" class="modal-featured-img">
@@ -106,9 +106,9 @@ const PORTFOLIO_DATA = {
         <h4>File Basis Data (MySQL):</h4>
         <p>Database: <code>db_batik_sekar</code> terdiri dari tabel <code>produk_batik</code>, <code>kategori</code>, dan <code>inquiry_pesanan</code>.</p>
         <div class="modal-actions" style="gap: 10px; flex-wrap: wrap;">
-          <a href="katalog-batik.html" class="btn btn-primary">Buka Live Demo Katalog →</a>
+          <a href="https://tokobatiksekarreyog.freepage.cc/index.php" target="_blank" rel="noopener" class="btn btn-primary">🌐 Buka Website Asli Toko Batik ↗</a>
           <a href="database/db_batik_sekar.sql" download class="btn btn-outline">📥 Unduh File SQL (db_batik_sekar.sql)</a>
-          <a href="sql-playground.html" class="btn btn-ghost">⚡ Coba Kueri SQL di Browser</a>
+          <a href="katalog-batik.html" class="btn btn-ghost">⚡ Demo Katalog Lokal</a>
         </div>
       `
     },
@@ -520,6 +520,9 @@ if (!$koneksi) {
 
         <h4>3. Pelajaran Berharga:</h4>
         <p>Meskipun kodingnya masih sederhana dan terus disempurnakan, ada rasa bangga tersendiri saat tugas sekolah yang kami kerjakan bisa bermanfaat bagi orang lain.</p>
+        <div class="modal-actions" style="margin-top: 16px;">
+          <a href="https://tokobatiksekarreyog.freepage.cc/index.php" target="_blank" rel="noopener" class="btn btn-primary">🌐 Kunjungi Website Toko Batik Sekar Reyog ↗</a>
+        </div>
       `
     }
   }

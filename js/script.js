@@ -433,8 +433,8 @@ document.addEventListener('DOMContentLoaded', () => {
         <h4>Teknologi yang Digunakan:</h4>
         <p><code>PHP Native</code>, <code>MySQL Database</code>, <code>HTML5 Semantik</code>, <code>CSS3 Flexbox/Grid</code>, <code>Bootstrap UI</code>.</p>
         <div class="modal-actions">
-          <a href="../batik-sekar-reyog/index.php" target="_blank" class="btn btn-primary">Buka Website Usaha →</a>
-          <a href="https://wa.me/6285231180206?text=Halo%20Yusuf%2C%20saya%20tertarik%20melihat%20source%20code%20proyek%20Batik%20Sekar%20Reyog." target="_blank" class="btn btn-ghost">Tanya Detail Teknis</a>
+          <a href="https://tokobatiksekarreyog.freepage.cc/index.php" target="_blank" rel="noopener" class="btn btn-primary">🌐 Buka Website Asli Toko Batik ↗</a>
+          <a href="https://wa.me/6285231180206?text=Halo%20Yusuf%2C%20saya%20tertarik%20melihat%20source%20code%20proyek%20Batik%20Sekar%20Reyog." target="_blank" rel="noopener" class="btn btn-ghost">Tanya Detail Teknis</a>
         </div>
       `
     },
@@ -835,6 +835,9 @@ if (!$koneksi) {
 
         <h4>3. Pelajaran Berharga:</h4>
         <p>Meskipun kodingnya masih terus disempurnakan, ada kepuasan tersendiri saat karya tugas sekolah yang kami kerjakan bisa membantu pemilik usaha lokal.</p>
+        <div class="modal-actions" style="margin-top: 16px;">
+          <a href="https://tokobatiksekarreyog.freepage.cc/index.php" target="_blank" rel="noopener" class="btn btn-primary">🌐 Kunjungi Website Toko Batik Sekar Reyog ↗</a>
+        </div>
       `
     }
   };
