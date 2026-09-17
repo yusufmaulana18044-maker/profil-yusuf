@@ -540,6 +540,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // B. CERTIFICATE MODALS
   const certData = {
+    'gamelab': {
+      title: 'Sertifikat Kunjungan Industri SMKN 1 Jenangan',
+      tag: 'PT Educa Sisfomedia Indonesia • Gamelab Indonesia & Educa Studio',
+      body: `
+        <div class="modal-featured-img-box" style="background:#ffffff; padding:10px; border-radius:8px; margin-bottom:16px; border:1px solid var(--card-border);">
+          <img src="images/sertifikat-gamelab.jpg" alt="Sertifikat Kunjungan Industri SMKN 1 Jenangan Gamelab Indonesia" class="modal-featured-img" style="max-height:480px; width:100%; object-fit:contain; margin:0;">
+        </div>
+        <div class="modal-preview-box">
+          <p><strong>Penerima:</strong> YUSUF MAULANA WAKHIDUL QOHAR</p>
+          <p><strong>Status:</strong> PESERTA</p>
+          <p><strong>Nomor Sertifikat:</strong> <code>GL4092193380</code></p>
+          <p><strong>Institusi Penyelenggara:</strong> PT Educa Sisfomedia Indonesia (Gamelab Indonesia &amp; Educa Studio)</p>
+          <p><strong>Tanggal Pelaksanaan:</strong> 05 Januari 2026 • Salatiga, Jawa Tengah</p>
+          <p><strong>Masa Berlaku:</strong> Hingga 05 Januari 2027</p>
+        </div>
+        <h4>Cakupan Pembelajaran Industri:</h4>
+        <ul class="modal-feature-list">
+          <li>Wawasan proses produksi teknologi, game development, dan media digital interaktif.</li>
+          <li>Pengenalan standar operasional prosedur (SOP) kerja programmer profesional.</li>
+          <li>Motivasi pengembangan keahlian kejuruan rekayasa perangkat lunak.</li>
+        </ul>
+        <div class="modal-actions" style="margin-top:16px;">
+          <a href="https://gamelab.id/certificate/GL4092193380" target="_blank" rel="noopener" class="btn btn-primary">Verifikasi Online di gamelab.id ↗</a>
+        </div>
+      `
+    },
     'skkni': {
       title: 'Sertifikat Kompetensi: Junior Web Developer',
       tag: 'Standar SKKNI / Badan Nasional Sertifikasi Profesi',
@@ -616,7 +642,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const certModalTitle = document.getElementById('certModalTitle');
   const certModalBody = document.getElementById('certModalBody');
 
-  document.querySelectorAll('.cert-view-btn').forEach(btn => {
+  document.querySelectorAll('.cert-view-btn, .open-cert-modal').forEach(btn => {
     btn.addEventListener('click', () => {
       if (window.PortfolioUtils) PortfolioUtils.playClickSound();
       const certId = btn.getAttribute('data-cert');

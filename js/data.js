@@ -14,8 +14,10 @@ const PORTFOLIO_DATA = {
     waUrl: "https://wa.me/6285231180206",
     github: "https://github.com/yusufmaulana18044-maker",
     instagram: "https://www.instagram.com/ysfmaulnawakhidqhar_?stkn=bjN3emljOXRxNHB4&utm_source=qr",
-    status: "Siswa SMK Jurusan TI • PKL di RSUD Dr. Harjono Ponorogo",
-    tagline: "Siswa SMK yang fokus pada pemrograman web (PHP & MySQL), berpengalaman PKL membangun sistem informasi kepegawaian (SICAKEP) di RSUD Dr. Harjono Ponorogo."
+    school: "SMKN 1 Jenangan (Ponorogo)",
+    organization: "Anggota OSIS SMKN 1 Jenangan (Periode 2024 - 2025)",
+    status: "Siswa SMKN 1 Jenangan • Anggota OSIS 2024-2025 • PKL di RSUD Dr. Harjono Ponorogo",
+    tagline: "Siswa SMKN 1 Jenangan dan Anggota OSIS 2024-2025 yang fokus pada pemrograman web (PHP & MySQL), berpengalaman PKL membangun sistem informasi kepegawaian (SICAKEP) di RSUD Dr. Harjono Ponorogo."
   },
 
   projects: {
@@ -232,6 +234,47 @@ const PORTFOLIO_DATA = {
   },
 
   certificates: {
+    'gamelab': {
+      id: 'gamelab',
+      title: 'Sertifikat Kunjungan Industri SMKN 1 Jenangan',
+      issuer: 'PT Educa Sisfomedia Indonesia • Gamelab Indonesia & Educa Studio',
+      certNo: 'GL4092193380',
+      recipient: 'YUSUF MAULANA WAKHIDUL QOHAR',
+      role: 'PESERTA Kunjungan Industri',
+      date: '05 Januari 2026',
+      location: 'Salatiga, Jawa Tengah',
+      signatory: 'Septi Yuliana, S.Ds. (Chief Executive Officer)',
+      verifyUrl: 'https://gamelab.id/certificate/GL4092193380',
+      badge: 'Sertifikat Resmi Industri',
+      tag: 'Kunjungan Industri SMKN 1 Jenangan',
+      status: 'TERVERIFIKASI RESMI',
+      image: 'images/sertifikat-gamelab.jpg',
+      body: `
+        <div class="modal-featured-img-box" style="background:#ffffff; padding:10px; border-radius:8px; margin-bottom:16px; border:1px solid var(--card-border);">
+          <img src="images/sertifikat-gamelab.jpg" alt="Sertifikat Kunjungan Industri SMKN 1 Jenangan Gamelab Indonesia" class="modal-featured-img" style="max-height:480px; width:100%; object-fit:contain; margin:0;">
+        </div>
+        <div class="modal-preview-box">
+          <p><strong>Penerima Sertifikat:</strong> YUSUF MAULANA WAKHIDUL QOHAR</p>
+          <p><strong>Acara:</strong> Kunjungan Industri SMKN 1 Jenangan</p>
+          <p><strong>Peran:</strong> PESERTA</p>
+          <p><strong>Nomor Kredensial:</strong> <code>GL4092193380</code></p>
+          <p><strong>Penyelenggara:</strong> PT Educa Sisfomedia Indonesia (Gamelab Indonesia &amp; Educa Studio)</p>
+          <p><strong>Tanggal Pelaksanaan:</strong> 05 Januari 2026 • Salatiga, Jawa Tengah</p>
+          <p><strong>Status Kredensial:</strong> <span class="text-accent" style="font-weight:700;">TERVERIFIKASI RESMI (Berlaku s/d 05 Januari 2027)</span></p>
+        </div>
+        <h4>Cakupan Pembelajaran Industri:</h4>
+        <ul class="modal-feature-list">
+          <li>Pengenalan alur kerja profesional dalam industri pengembangan software, game, dan media edukasi digital.</li>
+          <li>Wawasan implementasi teknologi, standar industri kerja (SOP), dan budaya kerja developer di studio PT Educa Sisfomedia Indonesia.</li>
+          <li>Motivasi pengembangan karir di bidang rekayasa perangkat lunak dan kejuruan teknologi informasi.</li>
+        </ul>
+        <div class="modal-actions" style="gap:10px; flex-wrap:wrap; margin-top:16px;">
+          <a href="https://gamelab.id/certificate/GL4092193380" target="_blank" rel="noopener" class="btn btn-primary">
+            Cek Verifikasi Online di gamelab.id ↗
+          </a>
+        </div>
+      `
+    },
     'skkni': {
       id: 'skkni',
       title: 'Uji Kompetensi Keahlian (UKK): Junior Web Developer',
