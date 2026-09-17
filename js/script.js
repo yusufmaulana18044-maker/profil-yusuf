@@ -272,22 +272,50 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   // 12. 1-CLICK CLIPBOARD COPY
   // ============================================
+  function copyTextSafe(text, successMsg) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text)
+        .then(() => showToast(successMsg))
+        .catch(() => fallbackCopy(text, successMsg));
+    } else {
+      fallbackCopy(text, successMsg);
+    }
+  }
+
+  function fallbackCopy(text, successMsg) {
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.top = '-9999px';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      const successful = document.execCommand('copy');
+      document.body.removeChild(ta);
+      if (successful) {
+        showToast(successMsg);
+      } else {
+        showToast('Gagal menyalin: ' + text);
+      }
+    } catch (err) {
+      showToast('Gagal menyalin: ' + text);
+    }
+  }
+
   const copyEmailBtn = document.getElementById('copyEmailBtn');
   const copyWaBtn = document.getElementById('copyWaBtn');
 
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', () => {
-      navigator.clipboard.writeText('yusufmwakhidul@gmail.com').then(() => {
-        showToast('Email (yusufmwakhidul@gmail.com) berhasil disalin ke clipboard! 📋');
-      });
+      copyTextSafe('yusufmwakhidul@gmail.com', 'Email (yusufmwakhidul@gmail.com) berhasil disalin ke clipboard! 📋');
     });
   }
 
   if (copyWaBtn) {
     copyWaBtn.addEventListener('click', () => {
-      navigator.clipboard.writeText('+6285231180206').then(() => {
-        showToast('Nomor WhatsApp (+62 852-3118-0206) berhasil disalin! 💬');
-      });
+      copyTextSafe('+6285231180206', 'Nomor WhatsApp (+62 852-3118-0206) berhasil disalin! 💬');
     });
   }
 
@@ -846,6 +874,18 @@ if (!$koneksi) {
   if (heroCvBtn && cvModal) {
     heroCvBtn.addEventListener('click', () => {
       cvModal.classList.add('open');
+    });
+  }
+
+  // F. BACK TO TOP BUTTON
+  const backToTopBtn = document.getElementById('backToTopBtn');
+  if (backToTopBtn) {
+    backToTopBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     });
   }
 
