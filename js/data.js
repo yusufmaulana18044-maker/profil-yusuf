@@ -363,50 +363,66 @@ const PORTFOLIO_DATA = {
   },
 
   activities: {
-    'ukk': {
-      id: 'ukk',
-      title: 'Ujian Praktik Kejuruan (UKK) Web Development',
-      location: 'Laboratorium Komputer SMK • Ponorogo',
-      date: 'Februari 2026',
-      tag: 'Ujian Praktik Sekolah',
+    'pkl-rsud': {
+      id: 'pkl-rsud',
+      title: 'Pelaksanaan Praktik Kerja Lapangan (PKL) di RSUD Dr. Harjono',
+      location: 'RSUD Dr. Harjono S. Ponorogo, Jawa Timur',
+      date: '2025 - 2026',
+      tag: 'Praktik Kerja Lapangan (PKL)',
+      image: 'images/kegiatan-pkl-rsud.jpg',
       body: `
-        <div class="modal-preview-box">
-          <p><strong>Kegiatan:</strong> Uji Kompetensi Keahlian (UKK) Praktik Pemrograman</p>
-          <p><strong>Lokasi:</strong> Lab Komputer Kejuruan Informatika, Ponorogo</p>
+        <div class="modal-featured-img-box">
+          <img src="images/kegiatan-pkl-rsud.jpg" alt="Dokumentasi Presentasi & Pengujian SICAKEP saat PKL di RSUD Dr. Harjono Ponorogo" class="modal-featured-img">
         </div>
-        <p>Pengalaman penting saat menyelesaikan tugas pembuatan website secara langsung dalam batas waktu ujian. Menguji kesiapan mental dalam merancang skema database MySQL, menulis script PHP, dan menata antarmuka CSS di depan guru dan asesor penguji.</p>
-        <h4>Rangkaian Ujian:</h4>
+        <div class="modal-preview-box">
+          <p><strong>Tempat PKL:</strong> RSUD Dr. Harjono S. Ponorogo, Jawa Timur</p>
+          <p><strong>Fokus Proyek:</strong> Rancang Bangun & Pengujian Sistem Informasi Catat Kepegawaian (SICAKEP)</p>
+          <p><strong>Periode:</strong> 2025 - 2026</p>
+        </div>
+        <p>Momen berharga saat mempresentasikan dan mendemonstrasikan sistem informasi kepegawaian (SICAKEP) di hadapan staf pembimbing instansi RSUD Dr. Harjono Ponorogo. Sistem ini dirancang untuk mempermudah alur pencatatan dan monitoring data pegawai secara terpusat.</p>
+        <h4>Rangkaian Kegiatan PKL:</h4>
         <ul class="modal-feature-list">
-          <li>Sesi 1: Perancangan struktur tabel database di phpMyAdmin.</li>
-          <li>Sesi 2: Koding halaman web, formulir input data, dan koneksi backend PHP.</li>
-          <li>Sesi 3: Presentasi hasil sistem dan demonstrasi fitur di hadapan penguji.</li>
+          <li>Observasi kebutuhan sistem pencatatan data kepegawaian rumah sakit.</li>
+          <li>Perancangan arsitektur antarmuka dan struktur basis data relasional MySQL.</li>
+          <li>Pengujian fungsionalitas sistem (testing & debugging) bersama staf instansi.</li>
         </ul>
       `
     },
-    'pkl-act': {
-      id: 'pkl-act',
-      title: 'Praktik Kerja Lapangan (PKL) & Observasi UMKM',
-      location: 'Sentra Usaha Batik • Kauman, Ponorogo',
-      date: 'Januari 2026',
-      tag: 'Kegiatan PKL',
+    'gamelab-ki': {
+      id: 'gamelab-ki',
+      title: 'Kunjungan Industri SMKN 1 Jenangan ke PT Educa Sisfomedia (Gamelab)',
+      location: 'Studio PT Educa Sisfomedia Indonesia • Salatiga, Jawa Tengah',
+      date: '05 Januari 2026',
+      tag: 'Kunjungan Industri SMKN 1 Jenangan',
+      image: 'images/kegiatan-gamelab.jpg',
       body: `
-        <div class="modal-preview-box">
-          <p><strong>Tujuan:</strong> Pengumpulan data produk dan observasi kebutuhan digitalisasi usaha batik lokal.</p>
+        <div class="modal-featured-img-box">
+          <img src="images/kegiatan-gamelab.jpg" alt="Foto Bersama Kunjungan Industri SMKN 1 Jenangan di Studio Gamelab Indonesia" class="modal-featured-img">
         </div>
-        <p>Terjun langsung ke sentra batik untuk wawancara dengan pemilik usaha, mencatat daftar motif batik Reyog, memotret sampel kain, dan merancang bagaimana data produk tersebut disimpan rapi ke dalam tabel database katalog.</p>
+        <div class="modal-preview-box">
+          <p><strong>Lokasi:</strong> PT Educa Sisfomedia Indonesia (Gamelab Indonesia & Educa Studio), Salatiga</p>
+          <p><strong>Waktu Pelaksanaan:</strong> 05 Januari 2026</p>
+          <p><strong>No. Sertifikat Kredensial:</strong> <code>GL4092193380</code></p>
+        </div>
+        <p>Dokumentasi foto bersama seluruh rombongan siswa-siswi SMKN 1 Jenangan di depan kantor PT Educa Sisfomedia Indonesia (Gamelab Indonesia) di Salatiga. Kegiatan ini memberikan wawasan nyata tentang standar operasional kerja dan proses kreasi di industri perangkat lunak modern.</p>
       `
     },
-    'study-group': {
-      id: 'study-group',
-      title: 'Belajar Bareng & Bedah Error Coding Mingguan',
-      location: 'Lab Komputer & Perpustakaan Sekolah',
+    'coding-rpl': {
+      id: 'coding-rpl',
+      title: 'Praktik Pemrograman & Coding Lab RPL SMKN 1 Jenangan',
+      location: 'Laboratorium Komputer RPL • SMKN 1 Jenangan Ponorogo',
       date: '2025 - 2026',
-      tag: 'Belajar Bersama',
+      tag: 'Praktik Kejuruan RPL',
+      image: 'images/kegiatan-coding-rpl.jpg',
       body: `
-        <div class="modal-preview-box">
-          <p><strong>Aktivitas:</strong> Diskusi dan Belajar Mandiri Bersama Teman Sekelas</p>
+        <div class="modal-featured-img-box">
+          <img src="images/kegiatan-coding-rpl.jpg" alt="Praktik Pemrograman & Coding Lab RPL SMKN 1 Jenangan" class="modal-featured-img">
         </div>
-        <p>Kegiatan rutin belajar coding bersama rekan sekelas, saling membantu mencari penyebab error query SQL, berbagi referensi cara membuat tampilan web rapi dengan CSS, dan berdiskusi seputar tugas-tugas kejuruan.</p>
+        <div class="modal-preview-box">
+          <p><strong>Aktivitas:</strong> Sesi Koding Intensif Pengembangan Web & Pengelolaan Basis Data</p>
+          <p><strong>Lokasi:</strong> Lab Komputer Rekayasa Perangkat Lunak, SMKN 1 Jenangan</p>
+        </div>
+        <p>Aktivitas sehari-hari mengasah keterampilan teknis pemrograman web, perancangan query SQL terstruktur, dan penerapan clean code pada pembuatan proyek-proyek aplikasi nyata di bawah bimbingan guru produktif RPL SMKN 1 Jenangan.</p>
       `
     }
   },
